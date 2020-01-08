@@ -556,7 +556,7 @@ $ git push origin dev   # push成功
 - 建立本地分支和远程分支的关联，使用`git branch --set-upstream branch-name origin/branch-name`；
 - 从远程抓取分支，使用`git pull`，如果有冲突，要先处理冲突。
 
-###issue
+### issue
 拉取到本地的文件里有`HEAD`分支，创建分支会报错，可以删除这个分支
 ```shell
 git branch -D HEAD
