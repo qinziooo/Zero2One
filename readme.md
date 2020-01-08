@@ -1,5 +1,3 @@
-
-
 # git：分布式版本控制系统
 
 版本库(仓库)：里面所有文件都可被git管理，每个增删查改都可追踪，也可还原.
@@ -176,7 +174,7 @@ e475afc HEAD@{3}: commit: add distributed
 eaadf4e HEAD@{4}: commit (initial): wrote a readme file
 ```
 
-![屏幕快照 2019-07-23 08.53.37](/Users/sunsuzhen/Desktop/截图/屏幕快照 2019-07-23 08.53.37.png)
+![屏幕快照 2019-07-23 08 53 47](https://user-images.githubusercontent.com/53204023/71946162-fbdbd400-3203-11ea-8e20-0008a1eba14c.png)
 
 ```python
 # 再次修改readme.txt
@@ -209,11 +207,11 @@ Changes to be committed:
 	modified:   readme.txt
 ```
 
-![屏幕快照 2019-07-23 08.53.47](/Users/sunsuzhen/Desktop/截图/屏幕快照 2019-07-23 08.53.47.png)
+![屏幕快照 2019-07-23 08 53 47](https://user-images.githubusercontent.com/53204023/71946146-f1213f00-3203-11ea-8428-87c6f549c48c.png)
 
 再commit后变为：
 
-![屏幕快照 2019-07-23 08.53.59](/Users/sunsuzhen/Desktop/截图/屏幕快照 2019-07-23 08.53.59.png)
+![屏幕快照 2019-07-23 08 53 59](https://user-images.githubusercontent.com/53204023/71946150-f3839900-3203-11ea-9202-26ea44a54a57.png)
 
 此时暂存区为空。
 
@@ -562,3 +560,9 @@ $ git push origin dev   # push成功
 - 在本地创建和远程分支对应的分支，使用`git checkout -b branch-name origin/branch-name`，本地和远程分支的名称最好一致；
 - 建立本地分支和远程分支的关联，使用`git branch --set-upstream branch-name origin/branch-name`；
 - 从远程抓取分支，使用`git pull`，如果有冲突，要先处理冲突。
+
+###issue
+拉取到本地的文件里有`HEAD`分支，创建分支会报错，可以删除这个分支
+```shell
+git branch -D HEAD
+```
